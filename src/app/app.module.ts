@@ -27,7 +27,7 @@ import { UsersComponent } from './users/users.component';
     BrowserModule,
     HttpModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent },
+      { path: '', component: HomePageComponent },
       { path: 'users', component: UsersComponent }
     ])
   ],
