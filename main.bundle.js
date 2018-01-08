@@ -185,7 +185,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* RouterModule */].forRoot([
-                { path: '', component: __WEBPACK_IMPORTED_MODULE_5__home_home_component__["a" /* HomeComponent */] },
+                { path: '', component: __WEBPACK_IMPORTED_MODULE_10__home_page_home_page_component__["a" /* HomePageComponent */] },
                 { path: 'users', component: __WEBPACK_IMPORTED_MODULE_11__users_users_component__["a" /* UsersComponent */] }
             ])
         ],
