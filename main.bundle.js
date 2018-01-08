@@ -185,7 +185,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* RouterModule */].forRoot([
-                { path: '', component: __WEBPACK_IMPORTED_MODULE_10__home_page_home_page_component__["a" /* HomePageComponent */] },
+                { path: '', component: __WEBPACK_IMPORTED_MODULE_5__home_home_component__["a" /* HomeComponent */] },
                 { path: 'users', component: __WEBPACK_IMPORTED_MODULE_11__users_users_component__["a" /* UsersComponent */] }
             ])
         ],
@@ -283,7 +283,7 @@ GithubFollowersComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/github-followers/github-followers.component.html"),
         styles: [__webpack_require__("../../../../../src/app/github-followers/github-followers.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__github_followers_service__["a" /* GithubFollowersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__github_followers_service__["a" /* GithubFollowersService */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_router__["c" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__github_followers_service__["a" /* GithubFollowersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__github_followers_service__["a" /* GithubFollowersService */]) === "function" && _b || Object])
 ], GithubFollowersComponent);
 
 var _a, _b;
@@ -546,7 +546,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/users/users.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n  <h1 class=\"user\"> {{ message }}</h1>\n</div>\n"
+module.exports = "<div>\n  <h1 class=\"user\"> {{ message }}</h1>\n  <button class=\"btn btn-primary\" (click)=\"submit()\"> Back Bitche's Score</button>\n</div>\n"
 
 /***/ }),
 
@@ -554,7 +554,8 @@ module.exports = "<div>\n  <h1 class=\"user\"> {{ message }}</h1>\n</div>\n"
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UsersComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -566,23 +567,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var UsersComponent = (function () {
-    function UsersComponent() {
+    function UsersComponent(router) {
+        this.router = router;
         this.message = 'He is a fucking asshole but is good friend and I wish you so many luck in your things motherfucker!! ';
     }
     UsersComponent.prototype.ngOnInit = function () {
     };
+    UsersComponent.prototype.submit = function () {
+        this.router.navigate(['']);
+    };
     return UsersComponent;
 }());
 UsersComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* Component */])({
         selector: 'app-users',
         template: __webpack_require__("../../../../../src/app/users/users.component.html"),
         styles: [__webpack_require__("../../../../../src/app/users/users.component.css")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* Router */]) === "function" && _a || Object])
 ], UsersComponent);
 
+var _a;
 //# sourceMappingURL=users.component.js.map
 
 /***/ }),
