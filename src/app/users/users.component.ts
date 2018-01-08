@@ -1,3 +1,4 @@
+import { Router  } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsersComponent implements OnInit {
   message: String = 'He is a fucking asshole but is good friend and I wish you so many luck in your things motherfucker!! ';
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  submit() {
+    this.router.navigate(['']);
   }
 
 }
