@@ -114,5 +114,11 @@ Debido a que estamos usando la libreria express en el archivo server.js deberemo
 
 Ahora deberemos modificar de nuevo nuestro archivo package.json en la seccion de script y editar el script start
 
-            "start": "node server.js",                                                 
+            "start": "node server.js"         
+
+5. Actualizar cambios
+
+        git add .
+        git commit -m ""
+        git push heroku master                                                    
 
