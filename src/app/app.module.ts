@@ -10,6 +10,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { GithubFollowersComponent } from './github-followers/github-followers.component';
 
 import { GithubFollowersService } from './github-followers/github-followers.service';
+import { HomePageComponent } from './home-page/home-page.component';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +19,16 @@ import { GithubFollowersService } from './github-followers/github-followers.serv
     HomeComponent,
     GithubFollowersComponent,
     AboutComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomePageComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
-      { path: 'followers', component: GithubFollowersComponent }
+      { path: 'users', component: UsersComponent }
     ])
   ],
   providers: [
