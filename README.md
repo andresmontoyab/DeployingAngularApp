@@ -102,7 +102,9 @@ Con el paso anterior ya tendremos una ulr desponible para desplegar nuestra apli
 
 4. Configurar package.json
 
-Debido a que heroku necesitará instalar angular/cli, angular/compiler y typescript para poder correr nuestra aplicacion deberemos mover estas dependencias de devDependencies a dependencies en nuestro archivo package.json.
+Debido a que heroku necesitará instalar angular/cli, angular/compiler-cli, y typescript para poder correr nuestra aplicacion deberemos mover estas dependencias de devDependencies a dependencies en nuestro archivo package.json.
+
+Para angular/cli y angular/compiler-cli  es de elemental importacia que sean las primeras dependencias
 
 Adicionalmente en la seccion de scripts deberemos añadir la siguiente linea que indicará la construccion de la aplicacion.
 
